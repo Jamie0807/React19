@@ -14,6 +14,7 @@ import { UseMemoDemo } from './components/UseMemo'
 import { UseFetchDemo } from './components/UseFetch'
 import { UseLayoutEffectDemo } from './components/UseLayoutEffect'
 import { UseImperativeHandleDemo } from './components/UseImperativeHandle'
+import { UseIdDemo } from './components/UseId'
 
 
 
@@ -43,6 +44,7 @@ function App() {
       <UseFetchDemo></UseFetchDemo>
       <UseLayoutEffectDemo></UseLayoutEffectDemo>
       <UseImperativeHandleDemo></UseImperativeHandleDemo>
+      <UseIdDemo></UseIdDemo>
     </>
   )
 }

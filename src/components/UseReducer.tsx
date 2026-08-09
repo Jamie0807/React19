@@ -1,5 +1,6 @@
 import { useReducer } from 'react';
- const initialState = {
+
+const initialState = {
         count: "",
         id: "",
         name: ""
