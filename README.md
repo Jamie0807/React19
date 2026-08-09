@@ -59,6 +59,7 @@ src/
 - `UseReducer.tsx`：useReducer
 - `UseContext.tsx`：useContext
 - `UseEffect.tsx`：useEffect
+- `UseLayoutEffect.tsx`：useLayoutEffect，并同步对比 useEffect 的执行时机
 - `UseMemo.tsx`：useMemo 和 useCallback
 - `UseFetch.tsx`：自定义 hook 请求数据
 

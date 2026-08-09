@@ -12,6 +12,7 @@ import { UseContextDemo } from './components/UseContext'
 import { UseEffectDemo } from './components/UseEffect'
 import { UseMemoDemo } from './components/UseMemo'
 import { UseFetchDemo } from './components/UseFetch'
+import { UseLayoutEffectDemo } from './components/UseLayoutEffect'
 
 
 
@@ -39,6 +40,7 @@ function App() {
       <UseEffectDemo></UseEffectDemo>
       <UseMemoDemo></UseMemoDemo>
       <UseFetchDemo></UseFetchDemo>
+      <UseLayoutEffectDemo></UseLayoutEffectDemo>
     </>
   )
 }
