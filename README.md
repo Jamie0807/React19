@@ -50,7 +50,7 @@ src/
 - `State.tsx`：组件状态
 - `Condition.tsx`：条件渲染
 - `List.tsx`：列表渲染
-- `Ref.tsx`：useRef、DOM 引用、缓存值
+- `UseRef.tsx`：useRef、DOM 引用、缓存值
 - `ForwardRef.tsx`：forwardRef
 - `Memo.tsx`：memo
 - `Suspense.tsx`：Suspense 和 lazy
@@ -60,6 +60,7 @@ src/
 - `UseContext.tsx`：useContext
 - `UseEffect.tsx`：useEffect
 - `UseLayoutEffect.tsx`：useLayoutEffect，并同步对比 useEffect 的执行时机
+- `UseImperativeHandle.tsx`：useImperativeHandle，对比 useRef 直接暴露 DOM 和自定义暴露方法
 - `UseMemo.tsx`：useMemo 和 useCallback
 - `UseFetch.tsx`：自定义 hook 请求数据
 

@@ -4,19 +4,18 @@ import { useRef, useEffect, useState } from "react"
  * 引用渲染
  * @returns 渲染后的组件
  */
-export const RefDemo = () => {
-    // createRef创建一个ref对象,用于获取DOM元素的引用,useRef创建一个可变的ref对象,用于缓存数据,不会触发组件重新渲染
+export const UseRefDemo = () => {
+    // useRef创建一个可变的ref对象,用于缓存数据,不会触发组件重新渲染
     const canvasRef = useRef<HTMLCanvasElement | null>(null)
     const audioRef = useRef<HTMLAudioElement | null>(null)
-
-    const [time, setTime] = useState(0)
-    // ref缓存数据,不会触发组件重新渲染
     const countRef = useRef<number>(0)
-    const [countSnapshot, setCountSnapshot] = useState(0)
 
     // 获取多元素的引用
     const listRef = useRef<Array<HTMLDivElement | null>>([])
     
+    const [time, setTime] = useState(0)
+    const [countSnapshot, setCountSnapshot] = useState(0)
+
     useEffect(() => {
         const canvasDom = canvasRef.current 
         // 获取2d渲染上下文

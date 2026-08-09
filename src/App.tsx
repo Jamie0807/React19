@@ -2,7 +2,7 @@ import { PropsDemo } from './components/Props'
 import { StateDemo } from './components/State'
 import { ConditionDemo } from './components/Condition'
 import { ListDemo } from './components/List'
-import { RefDemo } from './components/Ref'
+import { UseRefDemo } from './components/UseRef'
 import { ForwardRefDemo } from './components/ForwardRef'
 import { SuspenseDemo } from './components/Suspense'
 import { HeaderDemo } from './components/Memo'
@@ -13,6 +13,7 @@ import { UseEffectDemo } from './components/UseEffect'
 import { UseMemoDemo } from './components/UseMemo'
 import { UseFetchDemo } from './components/UseFetch'
 import { UseLayoutEffectDemo } from './components/UseLayoutEffect'
+import { UseImperativeHandleDemo } from './components/UseImperativeHandle'
 
 
 
@@ -30,7 +31,7 @@ function App() {
       <StateDemo onClick={() => alert('点击了外部按钮')}></StateDemo>
       <ConditionDemo></ConditionDemo>
       <ListDemo></ListDemo>
-      <RefDemo></RefDemo>
+      <UseRefDemo></UseRefDemo>
       <ForwardRefDemo></ForwardRefDemo>
       <SuspenseDemo></SuspenseDemo>
       <HeaderDemo></HeaderDemo>
@@ -41,6 +42,7 @@ function App() {
       <UseMemoDemo></UseMemoDemo>
       <UseFetchDemo></UseFetchDemo>
       <UseLayoutEffectDemo></UseLayoutEffectDemo>
+      <UseImperativeHandleDemo></UseImperativeHandleDemo>
     </>
   )
 }
