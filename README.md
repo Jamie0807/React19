@@ -1,6 +1,6 @@
 # React 学习项目
 
-这是一个使用 `pnpm create vite` 创建的 React 学习项目，技术栈为 React19、TypeScript 和 Vite。项目主要用于练习 React 的基础组件写法、Hooks、React 18 新增能力、React 19 新增能力、ref、Suspense、memo、数据请求等常见内容。
+这是一个使用 `pnpm create vite` 创建的 React 学习项目，技术栈为 React、TypeScript 和 Vite。项目主要用于练习 React 的基础组件写法、Hooks、React 18 新增能力、React 19 新增能力、ref、Suspense、memo、数据请求和状态管理等常见内容。
 
 ## 技术栈
 
@@ -41,8 +41,13 @@ pnpm run lint
 ```txt
 src/
   App.tsx              # 入口演示组件，集中引入各个 demo
+  api/                 # 示例数据请求和缓存逻辑
   components/          # React 学习示例
+  components/state/    # 状态管理相关展示组件
+  hooks/               # 自定义 hook
   main.tsx             # React 应用挂载入口
+  playground/          # 和 React 页面无关的 JS 练习
+  state/               # 状态管理的数据定义和 store
 ```
 
 ## 已包含的学习内容
@@ -64,7 +69,30 @@ src/
 - `UseImperativeHandle.tsx`：useImperativeHandle，对比 useRef 直接暴露 DOM 和自定义暴露方法
 - `UseId.tsx`：useId，生成稳定 id 并关联 label 和 input
 - `UseMemo.tsx`：useMemo 和 useCallback
+- `UseCallback.tsx`：useCallback
 - `UseFetch.tsx`：自定义 hook 请求数据
+- `components/state/Jotai.tsx`：Jotai 状态管理示例
+- `components/state/Zustand.tsx`：Zustand 状态管理示例
+
+## 状态管理结构
+
+```txt
+src/
+  components/
+    state/
+      Jotai.tsx        # Jotai 展示组件
+      Zustand.tsx      # Zustand 展示组件
+  state/
+    jotai/
+      atoms/           # Jotai atom 定义
+    zustand/
+      useCounter.ts    # Zustand store hook
+```
+
+## 自定义 Hook
+
+- `hooks/useFetch.ts`：封装请求逻辑
+- `components/UseFetch.tsx`：使用 `useFetch` 的展示组件
 
 ## 学习时容易遇到的问题
 
