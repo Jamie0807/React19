@@ -1,6 +1,6 @@
-import { fetchData } from './data.ts'
+import { fetchData } from '../api/beatles.ts'
 import { use } from "react";
-import type { Album } from './data.ts';
+import type { Album } from '../api/beatles.ts';
 
 type UseProps = {
     id: string

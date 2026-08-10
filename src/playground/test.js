@@ -31,7 +31,7 @@ export function parseParam(url) {
     let [key, val] = item.split('=');
     key = decodeURIComponent(key);
 
-    // 无赋值 key‑enabled → 值为 true
+    // 无赋值 key-enabled -> 值为 true
     if (val === undefined) {
       res[key] = true;
       return;
