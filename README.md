@@ -1,12 +1,13 @@
-# React 19 学习项目
+# React 学习项目
 
-这是一个使用官方推荐方式初始化的 React 19 学习项目，技术栈为 React 19、TypeScript 和 Vite。项目主要用于练习 React 的基础组件写法、Hooks、React 19 新增的 `use` hook、ref、Suspense、memo、数据请求等常见能力。
+这是一个使用 `pnpm create vite` 创建的 React 学习项目，技术栈为 React19、TypeScript 和 Vite。项目主要用于练习 React 的基础组件写法、Hooks、React 18 新增能力、React 19 新增能力、ref、Suspense、memo、数据请求等常见内容。
 
 ## 技术栈
 
-- React 19
+- React
 - TypeScript
 - Vite
+- pnpm
 - ESLint
 
 ## 本地运行
@@ -14,25 +15,25 @@
 安装依赖：
 
 ```bash
-npm install
+pnpm install
 ```
 
 启动开发服务：
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 构建项目：
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 代码检查：
 
 ```bash
-npm run lint
+pnpm run lint
 ```
 
 ## 目录说明
@@ -40,7 +41,7 @@ npm run lint
 ```txt
 src/
   App.tsx              # 入口演示组件，集中引入各个 demo
-  components/          # React 19 学习示例
+  components/          # React 学习示例
   main.tsx             # React 应用挂载入口
 ```
 
@@ -109,4 +110,4 @@ data.map(...)
 
 ## 项目目标
 
-这个项目不是完整业务应用，而是 React 19 的学习和实验集合。每个组件都尽量保持简单，方便单独理解一个 React 概念。
+这个项目不是完整业务应用，而是 React 学习和实验集合。每个组件都尽量保持简单，方便单独理解一个 React 概念，包括 React 18 和 React 19 中新增或常用的能力。

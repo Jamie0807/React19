@@ -33,8 +33,9 @@ export const UseReducerDemo = () =>{
     // const [count, setCount] = useState("")
     // const [id, setId] = useState("")
     // const [name, setName] = useState("")
+
+    // useReducer 用于管理状态，比 useState 更复杂
     const [info, dispatch] = useReducer(reducer, initialState)
-    console.log(info)
 
     return (
         <div>

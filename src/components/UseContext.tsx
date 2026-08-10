@@ -43,7 +43,10 @@ import React, { useContext, useState  } from 'react'
 //     )
 // }
 
-
+/**
+ * 深层状态传递
+ */
+// useContext 用于消费上下文值,GrandSon是消费者组件
 function GrandSon() {
     // useContext 是一个函数，用于从上下文对象中获取上下文值
     const count = useContext(CountContext)
@@ -75,6 +78,6 @@ export function UseContextDemo() {
             <CountContext.Provider value={count}>
                 <GrandPa></GrandPa>
             </CountContext.Provider>
-        </div> 
+        </div>
     )
 }
