@@ -15,6 +15,9 @@ import { UseFetchDemo } from './components/UseFetch'
 import { UseLayoutEffectDemo } from './components/UseLayoutEffect'
 import { UseImperativeHandleDemo } from './components/UseImperativeHandle'
 import { UseIdDemo } from './components/UseId'
+import { UseCallbackDemo } from './components/UseCallback'
+import { ZustandDemo } from './components/state/Zustand'
+import { Jotai } from './components/state/Jotai'
 
 
 
@@ -45,6 +48,9 @@ function App() {
       <UseLayoutEffectDemo></UseLayoutEffectDemo>
       <UseImperativeHandleDemo></UseImperativeHandleDemo>
       <UseIdDemo></UseIdDemo>
+      <UseCallbackDemo></UseCallbackDemo>
+      <ZustandDemo></ZustandDemo>
+      <Jotai></Jotai>
     </>
   )
 }
