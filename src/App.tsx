@@ -18,6 +18,10 @@ import { UseIdDemo } from './components/UseId'
 import { UseCallbackDemo } from './components/UseCallback'
 import { ZustandDemo } from './components/state/Zustand'
 import { Jotai } from './components/state/Jotai'
+import { UseSyncExternalStoreDemo } from './components/UseSyncExternalStore'
+import { Provider } from 'react-redux'
+import { store } from './state/redux/store'
+import { ReduxToolkitDemo } from './components/state/ReduxToolkit'
 
 
 
@@ -30,7 +34,7 @@ function App() {
 
 
   return (
-    <>
+    <Provider store={store}>
       <PropsDemo id="1" onClick={(id) => alert(id)}>这里的内容就是children</PropsDemo>
       <StateDemo onClick={() => alert('点击了外部按钮')}></StateDemo>
       <ConditionDemo></ConditionDemo>
@@ -51,7 +55,9 @@ function App() {
       <UseCallbackDemo></UseCallbackDemo>
       <ZustandDemo></ZustandDemo>
       <Jotai></Jotai>
-    </>
+      <UseSyncExternalStoreDemo></UseSyncExternalStoreDemo>
+      <ReduxToolkitDemo></ReduxToolkitDemo>
+    </Provider>
   )
 }
 
