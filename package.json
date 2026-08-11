@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "compile": "babel src -d babel-dist --extensions \".js,.jsx,.ts,.tsx\""
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
@@ -15,7 +16,12 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-redux": "^9.3.0",
-    "zustand": "5.0.12"
+    "zustand": "5.0.12",
+    "@babel/cli": "7.28.6",
+    "@babel/core": "7.29.0",
+    "@babel/preset-env": "7.29.2",
+    "@babel/preset-react": "7.28.5",
+    "@babel/preset-typescript": "7.28.5"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
