@@ -24,7 +24,7 @@ export const PropsDemo = (props: PropsDemoProps) => {
     <div>
       <h1>{props.id}</h1>
       <h2>{props.children}</h2>
-      <button onClick={() => props.onClick(props.id)}>Click me</button>
+      <button onClick={() => props.onClick("4")}>点击我</button>
     </div>
   );
 };

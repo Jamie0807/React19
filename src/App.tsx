@@ -30,12 +30,14 @@ import './App.css'
 /**
  * 父组件App，包含子组件PropsDemo
  */
+
+
 function App() {
-
-
   return (
     <Provider store={store}>
-      <PropsDemo id="1" onClick={(id) => alert(id)}>这里的内容就是children</PropsDemo>
+      <PropsDemo id="1" onClick={(id) => alert(id)}>
+        这里的内容就是children
+      </PropsDemo>
       <StateDemo onClick={() => alert('点击了外部按钮')}></StateDemo>
       <ConditionDemo></ConditionDemo>
       <ListDemo></ListDemo>
@@ -62,3 +64,4 @@ function App() {
 }
 
 export default App
+
